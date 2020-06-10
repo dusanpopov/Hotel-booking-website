@@ -22,6 +22,7 @@ html {
 
 body {
   color: #2d2c2c;
+  overflow-x: hidden;
 }
 
 section {
@@ -605,7 +606,7 @@ input::placeholder, textarea::placeholder {
   margin: auto;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 428px) {
   /* Header styles */
   .main-header {
     height: 10rem;
@@ -646,7 +647,7 @@ input::placeholder, textarea::placeholder {
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 950px) {
   section:not(.booking) {
     padding: 10rem 0;
   }
@@ -708,6 +709,11 @@ input::placeholder, textarea::placeholder {
   }
   .input, .options {
     min-width: 10rem;
+  }
+  .rooms-grid {
+    -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 8rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
