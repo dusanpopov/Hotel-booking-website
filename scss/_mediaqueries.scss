@@ -1,0 +1,113 @@
+@media screen and (min-width: 768px){
+
+    /* Header styles */
+    .main-header{
+        height: 10rem;
+    }
+
+    .main-header.active{
+        height: 6rem;
+    }
+
+    /* Hero styles */
+    .hero__title{
+        font-size: 8rem;
+    }
+
+    /* Contact section styles */
+    .contact__content{
+        justify-content: space-between;
+    }
+
+    /* Footer section styles */
+
+    .main-footer{
+
+        &__content{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__brand{
+            margin-bottom: 0;
+            flex: 0 0 60%;
+        }
+
+        &__text{
+            margin-top: 2.5rem;
+        }
+
+        &__heading{
+            margin-bottom: 4rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px){
+
+    section:not(.booking){
+        padding: 10rem 0;
+    }
+
+    .hamburger-menu{
+        display: none;
+    }
+
+    .main-navbar__list{
+        position: inherit;
+        width: initial;
+        height: initial;
+        background-color: transparent;
+        flex-direction: row;
+        justify-content: initial;
+        opacity: initial;
+        transform: scaleX(1);
+    }
+
+    .main-navbar__item:not(:last-child){
+        margin-right: 3rem;
+        margin-bottom: 0;
+    }
+
+    .main-navbar__link{
+        font-weight: normal;
+        transition: color .4s;
+    }
+
+    .main-navbar__link:hover{
+        color: $yellow-solid;
+    }
+
+    .main-heading__title{
+        font-size: 11rem;
+    }
+
+    .main-heading__subtitle{
+        font-size: 4rem;
+    }
+
+    .booking-form{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .booking-form .input-group{
+        margin-bottom: 0;
+    }
+
+    .booking-form .input-group:first-child{
+        flex: 0 0 20%;
+    }
+
+    .booking-form .btn-purple:hover{
+       background-color: $blue-transparent;
+    }
+
+    .input, .options{
+        min-width: 10rem;
+    }
+
+
+}
+
+ 

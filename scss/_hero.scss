@@ -1,0 +1,39 @@
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: url('../images/hero-background.jpg') center no-repeat;
+    background-size: cover;
+    @include displayFlex(center, center, column);
+    text-align: center;
+    position: relative;
+    z-index: 0;
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background-color: $blue-transparent-alt;
+    z-index: -1;
+}
+
+.main-heading{
+    color: #fff;
+    line-height: 1;
+    text-shadow: .1rem .1rem 1rem rgba(0,0,0, .5);
+    margin-bottom: 2.5rem;
+
+    &__title{
+        font-size: 5rem;
+        text-transform: uppercase;
+        letter-spacing: .3rem;
+    }
+
+    &__subtitle{
+        font-size: 3.6rem;
+        font-weight: 300;
+    }
+}

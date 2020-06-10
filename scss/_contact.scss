@@ -1,0 +1,55 @@
+.contact{
+
+    background-color: rgb(250, 250, 250);
+
+    &__top-heading{
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    &__content{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__form{
+        width: 100%;
+        background-image: $gradient-color;
+        padding: 2.5rem;
+
+        .input{
+            display: block;
+            background-color: transparent;
+            color: #fff;
+            font-weight: normal;
+            border-bottom: .2rem solid #fff;
+            padding-left: 0;
+        }
+
+        .input:focus + .bar::after{
+            transform: scaleX(1);
+        }
+
+        
+    }
+
+}
+
+.bar{
+    display: block;
+    position: relative;
+
+}
+
+.bar::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: .3rem;
+    background-color: $blue-light;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s;
+}

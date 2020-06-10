@@ -1,0 +1,44 @@
+.main-footer{
+    padding: 5rem 0;
+    background-color: $blue-solid;
+    color: #fff;
+
+    &__brand{
+        margin-bottom: 5rem;
+    }
+
+    &__heading{
+        text-transform: uppercase;
+        margin-bottom: 2.5rem;
+        font-size: 2rem;
+    }
+
+    &__text{
+        font-size: 1.5rem;
+    }
+}
+
+.social-media{
+    display: flex;
+}
+
+.sm-link{
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    border: .2rem solid $yellow-solid;
+    border-radius: 50%;
+    display: flex;
+    margin-right: 1rem;
+    transition: background-color .4s;
+
+    &:hover{
+        background-color: $yellow-solid;
+        color: $dark-color;
+    }
+
+}
+
+.sm-link i{
+    margin: auto;
+}
