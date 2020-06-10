@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px){
+@media screen and (min-width: 428px){
 
     /* Header styles */
     .main-header{
@@ -43,7 +43,7 @@
     }
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 950px){
 
     section:not(.booking){
         padding: 10rem 0;
@@ -107,6 +107,10 @@
         min-width: 10rem;
     }
 
+    .rooms-grid{
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        gap: 8rem;
+    }
 
 }
 
