@@ -22,7 +22,6 @@ html {
 
 body {
   color: #2d2c2c;
-  overflow-x: hidden;
 }
 
 section {
@@ -606,7 +605,7 @@ input::placeholder, textarea::placeholder {
   margin: auto;
 }
 
-@media screen and (min-width: 428px) {
+@media screen and (min-width: 768px) {
   /* Header styles */
   .main-header {
     height: 10rem;
@@ -714,6 +713,33 @@ input::placeholder, textarea::placeholder {
     -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 8rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .rooms-grid {
+    -ms-grid-columns: (minmax(8rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    gap: 4rem;
+  }
+  .rooms__name {
+    font-size: 1.8rem;
+  }
+  .rooms__price {
+    font-size: 1.5rem;
+  }
+  .rooms__info {
+    margin: 1rem .8rem;
+  }
+  .per-night {
+    font-size: 1.1rem;
+  }
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2.5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
