@@ -114,4 +114,32 @@
 
 }
 
- 
+ @media screen and (max-width: 430px){
+     .rooms-grid{
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    gap: 4rem;
+     }
+
+     .rooms__name{
+         font-size: 1.8rem;
+     }
+
+     .rooms__price{
+         font-size: 1.5rem;
+     }
+
+     .rooms__info{
+         margin: 1rem .8rem;
+     }
+
+     .per-night{
+         font-size: 1.1rem;
+     }
+
+     .grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        gap: 2.5rem;
+     }
+    
+ }
