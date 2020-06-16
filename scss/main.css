@@ -716,7 +716,7 @@ input::placeholder, textarea::placeholder {
   }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 393px) {
   .grid {
     display: -ms-grid;
     display: grid;
