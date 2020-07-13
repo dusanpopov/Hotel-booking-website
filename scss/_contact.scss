@@ -28,9 +28,7 @@
 
         .input:focus + .bar::after{
             transform: scaleX(1);
-        }
-
-        
+        }       
     }
 
 }
@@ -38,7 +36,6 @@
 .bar{
     display: block;
     position: relative;
-
 }
 
 .bar::after{
