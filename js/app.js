@@ -1,4 +1,3 @@
-// Selectors
 const header = document.querySelector(".main-header");
 const hamburegerMenu = document.querySelector(".hamburger-menu");
 const formBtns = document.querySelectorAll(".btn-form");
